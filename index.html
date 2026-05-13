@@ -1,0 +1,47 @@
+<div class="music-player">
+    <div class="main-card">
+        <div class="top-bar">
+            <i class="fas fa-chevron-down"></i>
+            <span>NOW PLAYING</span>
+            <i class="fas fa-list" id="menu-btn"></i>
+        </div>
+
+        <div class="album-wrapper">
+            <div id="album-art" class="album-art"></div>
+        </div>
+
+        <div class="song-details">
+            <h2 id="title">Select a Song</h2>
+            <p id="artist">Artist Name</p>
+        </div>
+
+        <div class="progress-area">
+            <div class="progress-bar">
+                <div id="progress-fill"></div>
+            </div>
+            <div class="timer">
+                <span id="current">0:00</span>
+                <span id="duration">0:00</span>
+            </div>
+        </div>
+
+        <div class="controls">
+            <i class="fas fa-redo-alt" id="repeat"></i>
+            <i class="fas fa-step-backward" id="prev"></i>
+            <div class="play-pause">
+                <i class="fas fa-play" id="main-play"></i>
+            </div>
+            <i class="fas fa-step-forward" id="next"></i>
+            <i class="fas fa-random" id="shuffle"></i>
+        </div>
+    </div>
+
+    <!-- Playlist Sidebar -->
+    <div class="playlist" id="playlist-side">
+        <h3>Queue</h3>
+        <ul id="song-list"></ul>
+    </div>
+</div>
+
+<audio id="main-audio" src=""></audio>
+<link rel="stylesheet" type="text/css" href="style.css">
